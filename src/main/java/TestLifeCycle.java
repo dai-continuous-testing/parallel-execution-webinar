@@ -4,7 +4,7 @@ import org.testng.annotations.*;
 
 public class TestLifeCycle {
 
-    public final Logger log = LoggerFactory.getLogger(this.getClass().getName());
+    private final Logger log = LoggerFactory.getLogger(this.getClass().getName());
 
     @BeforeSuite
     public void setUpSuite() {
@@ -30,6 +30,7 @@ public class TestLifeCycle {
     public void test1() {
         log.info( " THREAD ID : {} | Entering {} function!",Thread.currentThread().getId(),"test1");
     }
+
     @Test
     public void test2() {
         log.info( " THREAD ID : {} | Entering {} function!",Thread.currentThread().getId(),"test2");
