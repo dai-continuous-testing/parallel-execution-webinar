@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Parallel Tests" parallel="tests" verbose="1" >
+    <test name="Test 1"   >
+        <classes>
+            <class name="TestLifeCycle" />
+        </classes>
+    </test>
+
+    <test name="Test 2"   >
+        <classes>
+            <class name="TestLifeCycle" />
+        </classes>
+    </test>
+</suite>
