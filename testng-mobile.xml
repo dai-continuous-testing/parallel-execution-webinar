@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Parallel Tests Mobile" parallel="tests" >
+    <test name="Mobile 1"   parallel="classes">
+        <classes>
+            <class name="android.NativeAppTests" />
+            <class name="ios.NativeAppTests" />
+        </classes>
+    </test>
+    <test name="Mobile 2"   parallel="classes">
+        <classes>
+            <class name="android.NativeAppTests" />
+            <class name="ios.NativeAppTests" />
+        </classes>
+    </test>
+    <test name="Mobile 3"   parallel="classes">
+        <classes>
+            <class name="android.NativeAppTests" />
+            <class name="ios.NativeAppTests" />
+        </classes>
+    </test>
+</suite>
