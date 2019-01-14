@@ -9,8 +9,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -33,7 +31,6 @@ public class NativeAppTests extends BaseTestMobile {
 	private final String PACKAGE = "com.experitest.uicatalog";
 	private final String ACTIVITY = ".MainActivity";
 	private final String VERSION = "3.2740";
-	private final Logger log = LoggerFactory.getLogger(this.getClass().getName());
 
 	@BeforeClass
 	@Parameters("deviceQuery")

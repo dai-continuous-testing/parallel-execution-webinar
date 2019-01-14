@@ -18,7 +18,6 @@ public class BaseTestBrowser {
 	protected String browser = null;
 	private final Logger log = LoggerFactory.getLogger(this.getClass().getName());
 	private final Object lock = new Object();
-	private String verbose;
 
 
 	public void init() throws Exception {

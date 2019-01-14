@@ -51,6 +51,7 @@ public class NativeAppTests extends BaseTestMobile {
 		client.launch(APPLICATION, true, false);
 	}
 	
+	@Test
 	public void mapTest() throws InterruptedException {
 		logMethodInfo(Thread.currentThread().getStackTrace()[1].getMethodName(), Thread.currentThread().getId());
 		client.swipe("DOWN", 300, 500);
@@ -63,6 +64,7 @@ public class NativeAppTests extends BaseTestMobile {
 		Thread.sleep(2000);
 	}
 
+	@Test
 	public void webElementsTest() throws InterruptedException {
 		logMethodInfo(Thread.currentThread().getStackTrace()[1].getMethodName(), Thread.currentThread().getId());
 		driver.findElement(By.xpath("//*[@accessibilityLabel='Web']")).click();
@@ -72,6 +74,7 @@ public class NativeAppTests extends BaseTestMobile {
 		Thread.sleep(3000);
 	}
 	
+	@Test
 	public void toolBarTest() {
 		logMethodInfo(Thread.currentThread().getStackTrace()[1].getMethodName(), Thread.currentThread().getId());
 		driver.findElement(By.xpath("//*[@accessibilityLabel='Toolbar']")).click();
