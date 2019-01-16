@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Parallel Tests Desktop browsers" parallel="tests">
+	<test name="Chrome" parallel="methods">
+		<classes>
+			<parameter name='browser' value="chrome">
+				<class name="desktop.WebTests" />
+			</parameter>
+		</classes>
+	</test>
+	<test name="IE" parallel="methods">
+		<classes>
+			<parameter name='browser' value="internet explorer">
+				<class name="desktop.WebTests" />
+			</parameter>
+		</classes>
+	</test>
+	<test name="Firefox" parallel="methods">
+		<classes>
+			<parameter name='browser' value="firefox">
+				<class name="desktop.WebTests" />
+			</parameter>
+		</classes>
+	</test>
+	<test name="Safari" parallel="methods">
+		<classes>
+			<parameter name='browser' value="safari">
+				<class name="desktop.WebTests" />
+			</parameter>
+		</classes>
+	</test>
+</suite>
